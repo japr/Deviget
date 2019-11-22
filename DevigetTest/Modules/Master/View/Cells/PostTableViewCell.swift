@@ -16,6 +16,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet var title: UILabel!
     @IBOutlet var unreadIndicator: UIView!
     
+    private(set) var action: DismissAction!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         unreadIndicator.backgroundColor = UIColor.blue
@@ -27,5 +29,22 @@ class PostTableViewCell: UITableViewCell {
         authorLabel.text = nil
         commentsLabel.text = nil
         title.text = nil
+    }
+    
+    @IBAction private func dismissButtonTapped(_ sender: UIButton) {
+        action(self)
+    }
+}
+
+extension PostTableViewCell: ConfigurableCell {
+
+    typealias Element = RedditPost
+    
+    func configure(with item: RedditPost, dismissAction: @escaping DismissAction) {
+        action = dismissAction
+        authorLabel.text = item.author
+        commentsLabel.text = "\(item.numberOfComments) comments"
+        title.text = item.title
+        unreadIndicator.isHidden = !item.unread
     }
 }

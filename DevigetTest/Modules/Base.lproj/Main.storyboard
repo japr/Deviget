@@ -79,6 +79,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9G-lH-oHV">
                                                     <rect key="frame" x="10" y="126" width="283" height="30"/>
                                                     <state key="normal" title="Dismiss Post"/>
+                                                    <connections>
+                                                        <action selector="dismissAllButtonTapped:" destination="j84-Fn-b14" eventType="touchUpInside" id="yh7-Sd-gTm"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUr-GZ-99p">
                                                     <rect key="frame" x="90" y="66" width="273" height="20.5"/>
@@ -129,9 +132,6 @@
                                     <constraint firstAttribute="height" constant="34" id="Q2y-ZE-rkA"/>
                                 </constraints>
                                 <state key="normal" title="Dismiss All"/>
-                                <connections>
-                                    <action selector="dismissAllButtonTapped:" destination="j84-Fn-b14" eventType="touchUpInside" id="7CW-zc-0wQ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

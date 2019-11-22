@@ -9,6 +9,7 @@
 import UIKit
 
 class MasterPresenter: NSObject {
+    private let datasource: PostsDatasource<RedditPost, PostTableViewCell>
     private var dismissButton: UIButton!
     private let redditTopRepository: RedditTopRepositoryInterface
     private var tableView: UITableView!
@@ -17,6 +18,7 @@ class MasterPresenter: NSObject {
     
     init(repository: RedditTopRepositoryInterface,
          wireframe: MasterWireframeInterface) {
+        self.datasource = PostsDatasource()
         self.redditTopRepository = repository
         self.wireframe = wireframe
     }
@@ -27,7 +29,7 @@ class MasterPresenter: NSObject {
             case .failure(let error):
                 print("Error: \(error)")
             case .success(let list):
-                print("Success")
+                self.datasource.setItems(list)
                 self.tableView.reloadData()
             }
         }
@@ -37,6 +39,7 @@ class MasterPresenter: NSObject {
         dismissButton = dismissAllButton
         dismissAllButton.addTarget(self, action: #selector(dismissButtonTapped), for: .touchUpInside)
         tableView = table
+        tableView.dataSource = datasource
         loadTopPosts()
     }
     
