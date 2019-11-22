@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EE21FD412388119500476A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD402388119500476A4A /* AppDelegate.swift */; };
-		EE21FD432388119500476A4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD422388119500476A4A /* SceneDelegate.swift */; };
 		EE21FD452388119500476A4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD442388119500476A4A /* ViewController.swift */; };
 		EE21FD482388119500476A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE21FD462388119500476A4A /* Main.storyboard */; };
 		EE21FD4A2388119800476A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE21FD492388119800476A4A /* Assets.xcassets */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		EE21FD3D2388119500476A4A /* DevigetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevigetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21FD402388119500476A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE21FD422388119500476A4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE21FD442388119500476A4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE21FD472388119500476A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE21FD492388119800476A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				EE21FD402388119500476A4A /* AppDelegate.swift */,
-				EE21FD422388119500476A4A /* SceneDelegate.swift */,
 				EE21FD442388119500476A4A /* ViewController.swift */,
 				EE21FD462388119500476A4A /* Main.storyboard */,
 				EE21FD492388119800476A4A /* Assets.xcassets */,
@@ -202,7 +199,6 @@
 			files = (
 				EE21FD452388119500476A4A /* ViewController.swift in Sources */,
 				EE21FD412388119500476A4A /* AppDelegate.swift in Sources */,
-				EE21FD432388119500476A4A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
