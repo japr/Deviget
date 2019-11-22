@@ -10,10 +10,28 @@ import UIKit
 
 class PostsDatasource<Element: Decodable, Cell: PostTableViewCell>: NSObject, UITableViewDataSource where Cell.Element == Element {
     
+    var presenter: (UITableViewDelegate & PostTableViewCellDelegateInterface)?
+    
     private(set) var items: [Element] = []
     
     func setItems(_ items: [Element]) {
         self.items = items
+    }
+    
+    func itemAt(indexPath: IndexPath) -> Element {
+        return items[indexPath.row]
+    }
+    
+    func removeAllItems() {
+        items = []
+    }
+      
+    func removeItemAt(indexPath: IndexPath) {
+        items.remove(at: indexPath.row)
+    }
+    
+    func update(item: Element, at indexPath: IndexPath) {
+        items[indexPath.row] = item
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,7 +48,7 @@ class PostsDatasource<Element: Decodable, Cell: PostTableViewCell>: NSObject, UI
         }
         
         cell.configure(with: element) { [weak self] cell in
-            
+            self?.presenter?.didTapDismissPost(cell: cell)
         }
         
         return cell

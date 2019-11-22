@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol PostTableViewCellDelegateInterface {
+    func didTapDismissPost(cell: UITableViewCell)
+}
+
 class PostTableViewCell: UITableViewCell {
     @IBOutlet var authorLabel: UILabel!
     @IBOutlet var commentsLabel: UILabel!

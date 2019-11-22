@@ -36,15 +36,42 @@ class MasterPresenter: NSObject {
     }
     
     func registerInputs(table: UITableView, dismissAllButton: UIButton) {
+        datasource.presenter = self
         dismissButton = dismissAllButton
         dismissAllButton.addTarget(self, action: #selector(dismissButtonTapped), for: .touchUpInside)
         tableView = table
         tableView.dataSource = datasource
+        tableView.delegate = self
         loadTopPosts()
     }
     
     @objc
     private func dismissButtonTapped() {
-        
+        datasource.removeAllItems()
+        tableView.reloadData()
+    }
+}
+
+extension MasterPresenter: PostTableViewCellDelegateInterface {
+    func didTapDismissPost(cell: UITableViewCell) {
+        guard let index = tableView.indexPath(for: cell) else {
+            return
+        }
+        tableView.beginUpdates()
+        datasource.removeItemAt(indexPath: index)
+        tableView.deleteRows(at: [index], with: .top)
+        tableView.endUpdates()
+    }
+}
+
+extension MasterPresenter: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var post = datasource.itemAt(indexPath: indexPath)
+        post.unread = false
+        tableView.beginUpdates()
+        datasource.update(item: post, at: indexPath)
+        tableView.reloadRows(at: [indexPath], with: .fade)
+        tableView.endUpdates()
+        wireframe?.showDetailsFor(post: post)
     }
 }
