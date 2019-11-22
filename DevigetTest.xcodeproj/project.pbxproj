@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		EE21FD412388119500476A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD402388119500476A4A /* AppDelegate.swift */; };
-		EE21FD452388119500476A4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD442388119500476A4A /* ViewController.swift */; };
-		EE21FD482388119500476A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE21FD462388119500476A4A /* Main.storyboard */; };
 		EE21FD4A2388119800476A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE21FD492388119800476A4A /* Assets.xcassets */; };
-		EE21FD4D2388119800476A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE21FD4B2388119800476A4A /* LaunchScreen.storyboard */; };
 		EE21FD582388119800476A4A /* DevigetTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD572388119800476A4A /* DevigetTestTests.swift */; };
+		EE21FD73238812AA00476A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE21FD66238812AA00476A4A /* LaunchScreen.storyboard */; };
+		EE21FD74238812AA00476A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE21FD68238812AA00476A4A /* Main.storyboard */; };
+		EE21FD76238812D000476A4A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD75238812D000476A4A /* MasterViewController.swift */; };
+		EE21FD78238812DC00476A4A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD77238812DC00476A4A /* DetailsViewController.swift */; };
+		EE21FD7A238813A600476A4A /* Masterwireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD79238813A600476A4A /* Masterwireframe.swift */; };
+		EE21FD7C238813B100476A4A /* DetailsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD7B238813B100476A4A /* DetailsWireframe.swift */; };
+		EE21FD7E238813BA00476A4A /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD7D238813BA00476A4A /* DetailsPresenter.swift */; };
+		EE21FD80238813C400476A4A /* MasterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD7F238813C400476A4A /* MasterPresenter.swift */; };
+		EE21FD82238813CF00476A4A /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD81238813CF00476A4A /* NetworkInterface.swift */; };
+		EE21FD84238813DA00476A4A /* RedditRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD83238813DA00476A4A /* RedditRepository.swift */; };
+		EE21FD86238813E400476A4A /* RedditPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD85238813E400476A4A /* RedditPost.swift */; };
+		EE21FD88238813ED00476A4A /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD87238813ED00476A4A /* Placeholder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +37,23 @@
 /* Begin PBXFileReference section */
 		EE21FD3D2388119500476A4A /* DevigetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevigetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21FD402388119500476A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE21FD442388119500476A4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE21FD472388119500476A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE21FD492388119800476A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE21FD4C2388119800476A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE21FD4E2388119800476A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE21FD532388119800476A4A /* DevigetTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevigetTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21FD572388119800476A4A /* DevigetTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevigetTestTests.swift; sourceTree = "<group>"; };
 		EE21FD592388119800476A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE21FD67238812AA00476A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE21FD69238812AA00476A4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE21FD75238812D000476A4A /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		EE21FD77238812DC00476A4A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		EE21FD79238813A600476A4A /* Masterwireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Masterwireframe.swift; sourceTree = "<group>"; };
+		EE21FD7B238813B100476A4A /* DetailsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWireframe.swift; sourceTree = "<group>"; };
+		EE21FD7D238813BA00476A4A /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		EE21FD7F238813C400476A4A /* MasterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterPresenter.swift; sourceTree = "<group>"; };
+		EE21FD81238813CF00476A4A /* NetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
+		EE21FD83238813DA00476A4A /* RedditRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditRepository.swift; sourceTree = "<group>"; };
+		EE21FD85238813E400476A4A /* RedditPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditPost.swift; sourceTree = "<group>"; };
+		EE21FD87238813ED00476A4A /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +96,12 @@
 			isa = PBXGroup;
 			children = (
 				EE21FD402388119500476A4A /* AppDelegate.swift */,
-				EE21FD442388119500476A4A /* ViewController.swift */,
-				EE21FD462388119500476A4A /* Main.storyboard */,
+				EE21FD72238812AA00476A4A /* Additions */,
+				EE21FD63238812AA00476A4A /* Models */,
+				EE21FD65238812AA00476A4A /* Modules */,
+				EE21FD62238812AA00476A4A /* Network */,
+				EE21FD64238812AA00476A4A /* Repositories */,
 				EE21FD492388119800476A4A /* Assets.xcassets */,
-				EE21FD4B2388119800476A4A /* LaunchScreen.storyboard */,
 				EE21FD4E2388119800476A4A /* Info.plist */,
 			);
 			path = DevigetTest;
@@ -94,6 +114,117 @@
 				EE21FD592388119800476A4A /* Info.plist */,
 			);
 			path = DevigetTestTests;
+			sourceTree = "<group>";
+		};
+		EE21FD62238812AA00476A4A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD81238813CF00476A4A /* NetworkInterface.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EE21FD63238812AA00476A4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD85238813E400476A4A /* RedditPost.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE21FD64238812AA00476A4A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD83238813DA00476A4A /* RedditRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EE21FD65238812AA00476A4A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD66238812AA00476A4A /* LaunchScreen.storyboard */,
+				EE21FD68238812AA00476A4A /* Main.storyboard */,
+				EE21FD6A238812AA00476A4A /* Detail */,
+				EE21FD6E238812AA00476A4A /* Master */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EE21FD6A238812AA00476A4A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD6B238812AA00476A4A /* Presenter */,
+				EE21FD6C238812AA00476A4A /* Wireframe */,
+				EE21FD6D238812AA00476A4A /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		EE21FD6B238812AA00476A4A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD7D238813BA00476A4A /* DetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EE21FD6C238812AA00476A4A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD7B238813B100476A4A /* DetailsWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		EE21FD6D238812AA00476A4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD77238812DC00476A4A /* DetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE21FD6E238812AA00476A4A /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD6F238812AA00476A4A /* Presenter */,
+				EE21FD70238812AA00476A4A /* Wireframe */,
+				EE21FD71238812AA00476A4A /* View */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		EE21FD6F238812AA00476A4A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD7F238813C400476A4A /* MasterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EE21FD70238812AA00476A4A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD79238813A600476A4A /* Masterwireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		EE21FD71238812AA00476A4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD75238812D000476A4A /* MasterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE21FD72238812AA00476A4A /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				EE21FD87238813ED00476A4A /* Placeholder.swift */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +308,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE21FD4D2388119800476A4A /* LaunchScreen.storyboard in Resources */,
+				EE21FD74238812AA00476A4A /* Main.storyboard in Resources */,
 				EE21FD4A2388119800476A4A /* Assets.xcassets in Resources */,
-				EE21FD482388119500476A4A /* Main.storyboard in Resources */,
+				EE21FD73238812AA00476A4A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +328,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE21FD452388119500476A4A /* ViewController.swift in Sources */,
+				EE21FD76238812D000476A4A /* MasterViewController.swift in Sources */,
 				EE21FD412388119500476A4A /* AppDelegate.swift in Sources */,
+				EE21FD7C238813B100476A4A /* DetailsWireframe.swift in Sources */,
+				EE21FD7A238813A600476A4A /* Masterwireframe.swift in Sources */,
+				EE21FD82238813CF00476A4A /* NetworkInterface.swift in Sources */,
+				EE21FD86238813E400476A4A /* RedditPost.swift in Sources */,
+				EE21FD78238812DC00476A4A /* DetailsViewController.swift in Sources */,
+				EE21FD80238813C400476A4A /* MasterPresenter.swift in Sources */,
+				EE21FD88238813ED00476A4A /* Placeholder.swift in Sources */,
+				EE21FD7E238813BA00476A4A /* DetailsPresenter.swift in Sources */,
+				EE21FD84238813DA00476A4A /* RedditRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,20 +361,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE21FD462388119500476A4A /* Main.storyboard */ = {
+		EE21FD66238812AA00476A4A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE21FD472388119500476A4A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EE21FD4B2388119800476A4A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE21FD4C2388119800476A4A /* Base */,
+				EE21FD67238812AA00476A4A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EE21FD68238812AA00476A4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE21FD69238812AA00476A4A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
