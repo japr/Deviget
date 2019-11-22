@@ -25,6 +25,7 @@
 		EE6F71812387E24B00A57277 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6F71802387E24B00A57277 /* PostTableViewCell.swift */; };
 		EE6F71832387E36700A57277 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6F71822387E36700A57277 /* NetworkManager.swift */; };
 		EE6F71852387E37900A57277 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6F71842387E37900A57277 /* API.swift */; };
+		EE6F71872387E7EF00A57277 /* RedditList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6F71862387E7EF00A57277 /* RedditList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		EE6F71802387E24B00A57277 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		EE6F71822387E36700A57277 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EE6F71842387E37900A57277 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EE6F71862387E7EF00A57277 /* RedditList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				EE21FD85238813E400476A4A /* RedditPost.swift */,
+				EE6F71862387E7EF00A57277 /* RedditList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				EE21FD7C238813B100476A4A /* DetailsWireframe.swift in Sources */,
 				EE6F71832387E36700A57277 /* NetworkManager.swift in Sources */,
 				EE21FD7A238813A600476A4A /* Masterwireframe.swift in Sources */,
+				EE6F71872387E7EF00A57277 /* RedditList.swift in Sources */,
 				EE21FD82238813CF00476A4A /* NetworkInterface.swift in Sources */,
 				EE21FD86238813E400476A4A /* RedditPost.swift in Sources */,
 				EE21FD78238812DC00476A4A /* DetailsViewController.swift in Sources */,
