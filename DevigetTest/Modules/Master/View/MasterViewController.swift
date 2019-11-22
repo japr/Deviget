@@ -19,8 +19,4 @@ class MasterViewController: UIViewController {
         super.viewDidLoad()
         presenter?.registerInputs(table: tableView, dismissAllButton: dismissAllbutton)
     }
-    
-    @IBAction func dismissAllButtonTapped(_ sender: UIButton) {
-        
-    }
 }

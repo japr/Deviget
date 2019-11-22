@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EE1289912387F58B00436237 /* PostsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1289902387F58B00436237 /* PostsDatasource.swift */; };
+		EE1289932388008200436237 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1289922388008200436237 /* UIImageView+Additions.swift */; };
 		EE21FD412388119500476A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD402388119500476A4A /* AppDelegate.swift */; };
 		EE21FD4A2388119800476A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE21FD492388119800476A4A /* Assets.xcassets */; };
 		EE21FD582388119800476A4A /* DevigetTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD572388119800476A4A /* DevigetTestTests.swift */; };
@@ -16,8 +17,6 @@
 		EE21FD76238812D000476A4A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD75238812D000476A4A /* MasterViewController.swift */; };
 		EE21FD78238812DC00476A4A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD77238812DC00476A4A /* DetailsViewController.swift */; };
 		EE21FD7A238813A600476A4A /* Masterwireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD79238813A600476A4A /* Masterwireframe.swift */; };
-		EE21FD7C238813B100476A4A /* DetailsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD7B238813B100476A4A /* DetailsWireframe.swift */; };
-		EE21FD7E238813BA00476A4A /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD7D238813BA00476A4A /* DetailsPresenter.swift */; };
 		EE21FD80238813C400476A4A /* MasterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD7F238813C400476A4A /* MasterPresenter.swift */; };
 		EE21FD82238813CF00476A4A /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD81238813CF00476A4A /* NetworkInterface.swift */; };
 		EE21FD84238813DA00476A4A /* RedditRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD83238813DA00476A4A /* RedditRepository.swift */; };
@@ -41,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		EE1289902387F58B00436237 /* PostsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDatasource.swift; sourceTree = "<group>"; };
+		EE1289922388008200436237 /* UIImageView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
 		EE21FD3D2388119500476A4A /* DevigetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevigetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21FD402388119500476A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE21FD492388119800476A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,8 +53,6 @@
 		EE21FD75238812D000476A4A /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		EE21FD77238812DC00476A4A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EE21FD79238813A600476A4A /* Masterwireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Masterwireframe.swift; sourceTree = "<group>"; };
-		EE21FD7B238813B100476A4A /* DetailsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWireframe.swift; sourceTree = "<group>"; };
-		EE21FD7D238813BA00476A4A /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
 		EE21FD7F238813C400476A4A /* MasterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterPresenter.swift; sourceTree = "<group>"; };
 		EE21FD81238813CF00476A4A /* NetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
 		EE21FD83238813DA00476A4A /* RedditRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditRepository.swift; sourceTree = "<group>"; };
@@ -175,27 +173,9 @@
 		EE21FD6A238812AA00476A4A /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				EE21FD6B238812AA00476A4A /* Presenter */,
-				EE21FD6C238812AA00476A4A /* Wireframe */,
 				EE21FD6D238812AA00476A4A /* View */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		EE21FD6B238812AA00476A4A /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				EE21FD7D238813BA00476A4A /* DetailsPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		EE21FD6C238812AA00476A4A /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				EE21FD7B238813B100476A4A /* DetailsWireframe.swift */,
-			);
-			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		EE21FD6D238812AA00476A4A /* View */ = {
@@ -246,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				EE21FD87238813ED00476A4A /* UITableviewCell+Additions.swift */,
+				EE1289922388008200436237 /* UIImageView+Additions.swift */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -361,18 +342,17 @@
 			files = (
 				EE21FD76238812D000476A4A /* MasterViewController.swift in Sources */,
 				EE21FD412388119500476A4A /* AppDelegate.swift in Sources */,
-				EE21FD7C238813B100476A4A /* DetailsWireframe.swift in Sources */,
 				EE6F71832387E36700A57277 /* NetworkManager.swift in Sources */,
 				EE1289912387F58B00436237 /* PostsDatasource.swift in Sources */,
 				EE21FD7A238813A600476A4A /* Masterwireframe.swift in Sources */,
 				EE6F71872387E7EF00A57277 /* RedditList.swift in Sources */,
 				EE21FD82238813CF00476A4A /* NetworkInterface.swift in Sources */,
+				EE1289932388008200436237 /* UIImageView+Additions.swift in Sources */,
 				EE21FD86238813E400476A4A /* RedditPost.swift in Sources */,
 				EE21FD78238812DC00476A4A /* DetailsViewController.swift in Sources */,
 				EE6F71852387E37900A57277 /* API.swift in Sources */,
 				EE21FD80238813C400476A4A /* MasterPresenter.swift in Sources */,
 				EE21FD88238813ED00476A4A /* UITableviewCell+Additions.swift in Sources */,
-				EE21FD7E238813BA00476A4A /* DetailsPresenter.swift in Sources */,
 				EE21FD84238813DA00476A4A /* RedditRepository.swift in Sources */,
 				EE6F71812387E24B00A57277 /* PostTableViewCell.swift in Sources */,
 			);

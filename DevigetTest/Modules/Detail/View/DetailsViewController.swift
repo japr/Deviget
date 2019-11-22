@@ -23,5 +23,6 @@ class DetailsViewController: UIViewController {
     func updateDetailsWith(post: RedditPost) {
         authorLabel.text = post.author
         titleLabel.text = post.title
+        thumbnailView.loadImageFrom(url: post.thumbnailURL)
     }
 }

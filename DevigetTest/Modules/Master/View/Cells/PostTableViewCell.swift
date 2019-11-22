@@ -48,6 +48,7 @@ extension PostTableViewCell: ConfigurableCell {
         action = dismissAction
         authorLabel.text = item.author
         commentsLabel.text = "\(item.numberOfComments) comments"
+        thumbnailImage.loadImageFrom(url: item.thumbnailURL)
         title.text = item.title
         unreadIndicator.isHidden = !item.unread
     }
