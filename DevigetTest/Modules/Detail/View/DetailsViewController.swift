@@ -19,4 +19,9 @@ class DetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    func updateDetailsWith(post: RedditPost) {
+        authorLabel.text = post.author
+        titleLabel.text = post.title
+    }
 }

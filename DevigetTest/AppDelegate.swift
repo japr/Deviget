@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             navigation.viewControllers.forEach { controller in
                 if let details = controller as? DetailsViewController {
-                    
+                    wireFrame.detailsViewController = details
                 } else if let master = controller as? MasterViewController {
                     master.presenter = presenter
                 }

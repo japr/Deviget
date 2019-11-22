@@ -13,11 +13,11 @@ protocol MasterWireframeInterface {
 }
 
 class MasterWireframe {
-    
+    var detailsViewController: DetailsViewController?
 }
 
 extension MasterWireframe: MasterWireframeInterface {
     func showDetailsFor(post: RedditPost) {
-        
+        detailsViewController?.updateDetailsWith(post: post)
     }
 }
