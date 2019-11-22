@@ -10,9 +10,15 @@ import UIKit
 
 class MasterViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func dismissAllButtonTapped(_ sender: UIButton) {
+        
     }
 }

@@ -10,6 +10,10 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var thumbnailView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
