@@ -23,6 +23,8 @@
 		EE21FD86238813E400476A4A /* RedditPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD85238813E400476A4A /* RedditPost.swift */; };
 		EE21FD88238813ED00476A4A /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21FD87238813ED00476A4A /* Placeholder.swift */; };
 		EE6F71812387E24B00A57277 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6F71802387E24B00A57277 /* PostTableViewCell.swift */; };
+		EE6F71832387E36700A57277 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6F71822387E36700A57277 /* NetworkManager.swift */; };
+		EE6F71852387E37900A57277 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6F71842387E37900A57277 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		EE21FD85238813E400476A4A /* RedditPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditPost.swift; sourceTree = "<group>"; };
 		EE21FD87238813ED00476A4A /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		EE6F71802387E24B00A57277 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		EE6F71822387E36700A57277 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EE6F71842387E37900A57277 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				EE21FD81238813CF00476A4A /* NetworkInterface.swift */,
+				EE6F71822387E36700A57277 /* NetworkManager.swift */,
+				EE6F71842387E37900A57277 /* API.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -342,10 +348,12 @@
 				EE21FD76238812D000476A4A /* MasterViewController.swift in Sources */,
 				EE21FD412388119500476A4A /* AppDelegate.swift in Sources */,
 				EE21FD7C238813B100476A4A /* DetailsWireframe.swift in Sources */,
+				EE6F71832387E36700A57277 /* NetworkManager.swift in Sources */,
 				EE21FD7A238813A600476A4A /* Masterwireframe.swift in Sources */,
 				EE21FD82238813CF00476A4A /* NetworkInterface.swift in Sources */,
 				EE21FD86238813E400476A4A /* RedditPost.swift in Sources */,
 				EE21FD78238812DC00476A4A /* DetailsViewController.swift in Sources */,
+				EE6F71852387E37900A57277 /* API.swift in Sources */,
 				EE21FD80238813C400476A4A /* MasterPresenter.swift in Sources */,
 				EE21FD88238813ED00476A4A /* Placeholder.swift in Sources */,
 				EE21FD7E238813BA00476A4A /* DetailsPresenter.swift in Sources */,
