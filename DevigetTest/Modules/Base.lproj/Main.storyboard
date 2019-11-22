@@ -149,6 +149,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="aFL-p6-TET"/>
                     <connections>
+                        <outlet property="dismissAllbutton" destination="DVa-Fk-uGF" id="O4b-4X-dsL"/>
                         <outlet property="tableView" destination="xnh-Jf-K7d" id="jxh-9G-535"/>
                     </connections>
                 </viewController>
@@ -159,15 +160,31 @@
         <!--Split View Controller-->
         <scene sceneID="nlL-hk-2q5">
             <objects>
-                <splitViewController id="7vQ-kr-fsZ" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="InitialViewController" id="7vQ-kr-fsZ" sceneMemberID="viewController">
                     <connections>
                         <segue destination="RiP-GH-sD3" kind="relationship" relationship="masterViewController" id="Mcd-hU-9Wp"/>
-                        <segue destination="xDZ-d1-YDC" kind="relationship" relationship="detailViewController" id="LPI-1Q-oIP"/>
+                        <segue destination="z7j-Ph-tBo" kind="relationship" relationship="detailViewController" id="Awt-dz-kK6"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tW1-vY-hgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-290" y="-86"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Xn-xb-O89">
+            <objects>
+                <navigationController id="z7j-Ph-tBo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2y8-YL-vvy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xDZ-d1-YDC" kind="relationship" relationship="rootViewController" id="PEh-ti-uRb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzG-ki-czP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="248"/>
         </scene>
         <!--Detail-->
         <scene sceneID="WPU-9t-f2G">
@@ -223,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72X-C5-UoW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="260"/>
+            <point key="canvasLocation" x="1383" y="248"/>
         </scene>
     </scenes>
 </document>

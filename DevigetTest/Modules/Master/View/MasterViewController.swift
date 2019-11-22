@@ -10,12 +10,14 @@ import UIKit
 
 class MasterViewController: UIViewController {
 
+    @IBOutlet var dismissAllbutton: UIButton!
     @IBOutlet var tableView: UITableView!
+    
+    var presenter: MasterPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter?.registerInputs(table: tableView, dismissAllButton: dismissAllbutton)
     }
     
     @IBAction func dismissAllButtonTapped(_ sender: UIButton) {

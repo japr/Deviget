@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+protocol MasterWireframeInterface {
+    func showDetailsFor(post: RedditPost)
+}
+
+class MasterWireframe {
+    
+}
+
+extension MasterWireframe: MasterWireframeInterface {
+    func showDetailsFor(post: RedditPost) {
+        
+    }
+}
